@@ -168,6 +168,10 @@ while inPlay:
                         limbs += 1
                     else:
                         end()
+      else:
+                    print(spacedOut(word, guessed))
+                    if spacedOut(word, guessed).count('_') == 0:
+                        end(True)
                 
 
 pygame.quit()
